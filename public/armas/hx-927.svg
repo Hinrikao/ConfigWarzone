@@ -1,0 +1,14 @@
+<svg width="640" height="320" viewBox="0 0 640 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gradHx" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0b1120" />
+      <stop offset="50%" stop-color="#22d3ee" />
+      <stop offset="100%" stop-color="#0b132b" />
+    </linearGradient>
+  </defs>
+  <rect width="640" height="320" rx="28" fill="url(#gradHx)"/>
+  <text x="40" y="90" fill="#ccfbf1" font-size="40" font-family="Arial" font-weight="700">HX-927</text>
+  <text x="40" y="140" fill="#a5f3fc" font-size="18" font-family="Arial">SMG silenciosa - Supersônica</text>
+  <text x="40" y="200" fill="#e2e8f0" font-size="24" font-family="Arial" font-weight="700">CÓDIGO: C07-4PVNS-7QKTA-5210</text>
+  <text x="40" y="240" fill="#e2e8f0" font-size="20" font-family="Arial">Ideal para flanquear</text>
+</svg>

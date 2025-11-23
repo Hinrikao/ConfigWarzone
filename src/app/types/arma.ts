@@ -7,4 +7,6 @@ export type Arma = {
   raridade: "comum" | "rara" | "lendaria" | "experimental";
   perks: string[];
   imagem?: string;
+  visibilidade: "publica" | "privada" | "squad";
+  publicadoPor?: string;
 };

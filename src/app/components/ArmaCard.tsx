@@ -18,6 +18,18 @@ const raridadeLabels: Record<Arma["raridade"], string> = {
   experimental: "Experimental",
 };
 
+const visibilidadeLabels: Record<Arma["visibilidade"], string> = {
+  publica: "Público",
+  privada: "Privado",
+  squad: "Squad",
+};
+
+const visibilidadeClasses: Record<Arma["visibilidade"], string> = {
+  publica: "bg-emerald-500/20 text-emerald-100 border-emerald-400/40",
+  privada: "bg-slate-800 text-slate-100 border-white/15",
+  squad: "bg-cyan-500/20 text-cyan-50 border-cyan-400/40",
+};
+
 function gerarLinkCompartilhamento(arma: Arma) {
   const base = "https://back-ops-7.example/config";
   const params = new URLSearchParams({
@@ -86,10 +98,20 @@ export function ArmaCard({ arma }: Props) {
             {arma.categoria}
           </p>
           <h3 className="text-2xl font-semibold leading-tight">{arma.nome}</h3>
+          <p className="text-xs text-white/70">
+            {arma.publicadoPor ? `Publicado por ${arma.publicadoPor}` : "Autor não informado"}
+          </p>
         </div>
-        <span className="rounded-full border border-white/20 px-3 py-1 text-xs font-semibold uppercase tracking-wide">
-          {raridadeLabels[arma.raridade]}
-        </span>
+        <div className="flex flex-col items-end gap-2">
+          <span className="rounded-full border border-white/20 px-3 py-1 text-xs font-semibold uppercase tracking-wide">
+            {raridadeLabels[arma.raridade]}
+          </span>
+          <span
+            className={`rounded-full border px-3 py-1 text-xs font-semibold uppercase tracking-wide ${visibilidadeClasses[arma.visibilidade]}`}
+          >
+            {visibilidadeLabels[arma.visibilidade]}
+          </span>
+        </div>
       </div>
 
         <div className="grid grid-cols-1 gap-4 md:grid-cols-2">

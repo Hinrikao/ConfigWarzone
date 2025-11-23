@@ -1,0 +1,77 @@
+import { Arma } from "../types/arma";
+
+export const armas: Arma[] = [
+  {
+    id: "m15-mod-0",
+    nome: "M15 Mod 0",
+    categoria: "Fuzil de Assalto",
+    codigoConfiguracao: "A01-2JDGJ-4UQHW-1711",
+    descricaoCurta:
+      "Config pensada para médio alcance com recuo estável e mira limpa para rotações rápidas.",
+    raridade: "rara",
+    perks: ["Mira limpa", "Rocada rápida", "Controle de recuo"],
+    imagem: "/armas/m15-mod0.svg",
+    visibilidade: "squad",
+    publicadoPor: "ArmaLab_Beta",
+  },
+  {
+    id: "ks-7",
+    nome: "KS-7",
+    categoria: "Escopeta Tática",
+    codigoConfiguracao: "B19-8QLMK-2XPPD-0905",
+    descricaoCurta:
+      "Build compacta focada em limpezas de curta distância com cadência agressiva.",
+    raridade: "lendaria",
+    perks: ["Cadência agressiva", "Penetração aprimorada", "Mobilidade elevada"],
+    imagem: "/armas/ks-7.svg",
+    visibilidade: "publica",
+    publicadoPor: "NicoRanger",
+  },
+  {
+    id: "hx-927",
+    nome: "HX-927",
+    categoria: "SMG Tática",
+    codigoConfiguracao: "C07-4PVNS-7QKTA-5210",
+    descricaoCurta:
+      "SMG silenciosa para flancos. Trocou munição padrão por supersônica para não perder alcance.",
+    raridade: "experimental",
+    perks: ["Supressor integrado", "Supersônica", "Pente estendido"],
+    imagem: "/armas/hx-927.svg",
+    visibilidade: "publica",
+    publicadoPor: "AvaNight",
+  },
+  {
+    id: "xr-45",
+    nome: "XR-45",
+    categoria: "DMR",
+    codigoConfiguracao: "D11-9JQWE-4FR90-3321",
+    descricaoCurta:
+      "Design semi-automático para map control com alto dano e bipé dobrável para estabilidade.",
+    raridade: "comum",
+    perks: ["Bipé dobrável", "Munição perfurante", "Óptica híbrida"],
+    visibilidade: "squad",
+    publicadoPor: "Operador_Delta",
+  },
+  {
+    id: "lunas-3",
+    nome: "Lunas-3",
+    categoria: "LMG",
+    codigoConfiguracao: "E23-7PLMK-3SS92-8832",
+    descricaoCurta: "Controle de área com tambor estendido e mira holográfica limpa.",
+    raridade: "rara",
+    perks: ["Tambor 100", "Holográfica", "Grip anti recuo"],
+    visibilidade: "privada",
+    publicadoPor: "CamilaDuarte",
+  },
+  {
+    id: "arclite-v",
+    nome: "Arclite V",
+    categoria: "Pistola Tática",
+    codigoConfiguracao: "F03-2MNBQ-5TTA1-9921",
+    descricaoCurta: "Sidearm silenciada para rotações com foco em precisão e ADS rápido.",
+    raridade: "lendaria",
+    perks: ["Silenciador leve", "Laser verde", "Gatilho responsivo"],
+    visibilidade: "publica",
+    publicadoPor: "RafaNOG",
+  },
+];

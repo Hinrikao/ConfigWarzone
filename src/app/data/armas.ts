@@ -34,4 +34,32 @@ export const armas: Arma[] = [
     perks: ["Supressor integrado", "Supersônica", "Pente estendido"],
     imagem: "/armas/hx-927.svg",
   },
+  {
+    id: "xr-45",
+    nome: "XR-45",
+    categoria: "DMR",
+    codigoConfiguracao: "D11-9JQWE-4FR90-3321",
+    descricaoCurta:
+      "Design semi-automático para map control com alto dano e bipé dobrável para estabilidade.",
+    raridade: "comum",
+    perks: ["Bipé dobrável", "Munição perfurante", "Óptica híbrida"],
+  },
+  {
+    id: "lunas-3",
+    nome: "Lunas-3",
+    categoria: "LMG",
+    codigoConfiguracao: "E23-7PLMK-3SS92-8832",
+    descricaoCurta: "Controle de área com tambor estendido e mira holográfica limpa.",
+    raridade: "rara",
+    perks: ["Tambor 100", "Holográfica", "Grip anti recuo"],
+  },
+  {
+    id: "arclite-v",
+    nome: "Arclite V",
+    categoria: "Pistola Tática",
+    codigoConfiguracao: "F03-2MNBQ-5TTA1-9921",
+    descricaoCurta: "Sidearm silenciada para rotações com foco em precisão e ADS rápido.",
+    raridade: "lendaria",
+    perks: ["Silenciador leve", "Laser verde", "Gatilho responsivo"],
+  },
 ];

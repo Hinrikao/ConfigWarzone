@@ -1,0 +1,14 @@
+<svg width="640" height="320" viewBox="0 0 640 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="50%" stop-color="#0ea5e9" />
+      <stop offset="100%" stop-color="#020617" />
+    </linearGradient>
+  </defs>
+  <rect width="640" height="320" rx="28" fill="url(#grad)"/>
+  <text x="40" y="90" fill="#e0f2fe" font-size="40" font-family="Arial" font-weight="700">M15 MOD 0</text>
+  <text x="40" y="140" fill="#bae6fd" font-size="18" font-family="Arial">Fuzil de Assalto - Recorte inspirado no HUD Back OPS 7</text>
+  <text x="40" y="200" fill="#e2e8f0" font-size="24" font-family="Arial" font-weight="700">CÓDIGO: A01-2JDGJ-4UQHW-1711</text>
+  <text x="40" y="240" fill="#e2e8f0" font-size="20" font-family="Arial">Compartilhe e importe direto no jogo</text>
+</svg>

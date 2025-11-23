@@ -34,3 +34,28 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## Como resolver conflitos (ex.: `src/app/data/armas.ts` e `src/app/page.tsx`)
+
+Se o GitHub mostrar aviso de "This branch has conflicts that must be resolved" para esses arquivos, significa que o branch base (geralmente `main`) recebeu alterações nos mesmos trechos que você modificou. Para corrigir localmente:
+
+1. Certifique-se de ter o branch base atualizado:
+   ```bash
+   git fetch origin
+   git checkout main
+   git pull
+   ```
+2. Volte ao seu branch de trabalho e integre as mudanças do base:
+   ```bash
+   git checkout work
+   git merge origin/main
+   ```
+   - Se surgirem marcadores `<<<<<<<`, `=======`, `>>>>>>>` em `src/app/data/armas.ts` ou `src/app/page.tsx`, edite escolhendo qual trecho manter ou mesclando os dois.
+3. Após resolver os conflitos, confirme no Git se todos foram limpos:
+   ```bash
+   git status
+   ```
+   - Use `git add` nos arquivos corrigidos e finalize com `git commit`.
+4. Por fim, envie o branch atualizado para o repositório remoto e continue o fluxo do PR.
+
+Esses passos garantem que o histórico fique sincronizado com o branch base e eliminam o bloqueio de merge no GitHub.
